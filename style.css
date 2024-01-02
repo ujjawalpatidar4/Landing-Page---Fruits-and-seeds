@@ -1,0 +1,252 @@
+:root {
+    --blue: #3882f6;
+    --dark: #1f2937;
+    --gray: #e5e7eb;
+    --white: #f9faf8;
+    --active: hsl(217, 91%, 35%);
+    --btn-hover: hsl(217, 91%, 45%);
+    --odin: #cc9543;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* NAVBAR */
+
+header {
+    padding: 0 100px;
+    color: var(--white);
+    background-color: var(--dark);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.heading>img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.heading h2 {
+    font-weight: 100;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+nav>ul>li {
+    list-style-type: none;
+}
+
+nav>ul>li:hover {
+    cursor: pointer;
+    color: var(--blue);
+    transition: ease-in-out 0.42s;
+}
+
+/* NAVBAR CONTAINER */
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.grid-left {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grid-left>h1 {
+    font-weight: 600;
+    padding-bottom: 30px;
+    font-size: 45px;
+}
+
+.grid-left h3 {
+    font-weight: 100;
+    padding-bottom: 30px;
+    word-spacing: 4px;
+    color: var(--gray);
+}
+
+.grid-left button {
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 1.125rem;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    border: 0px solid transparent;
+    padding: 10px 40px;
+}
+
+.grid-left button:hover {
+    background-color: var(--btn-hover);
+}
+
+.grid-right {
+    padding: 30px;
+}
+
+/* Section 1  */
+
+.section1 {
+    background-color: var(--white);
+    padding: 0 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section1 h2 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cards-image {
+    height: 242px;
+    width: 242px;
+    border: 4px solid var(--blue);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.cards-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--dark);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Section 2  */
+.section2 {
+    background-color: var(--gray);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.quote {
+    margin: 100px 300px 70px 300px;
+    line-height: 2.8rem;
+}
+
+.quote h2 {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.quote h3 {
+    text-align: right;
+    font-size: 25px;
+}
+
+/* Section3 */
+.section3 {
+    padding: 50px 0;
+    color: var(--white);
+}
+
+.box {
+    margin: 20px 270px;
+    background-color: var(--blue);
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    /* text-align: center; */
+    padding: 40px 100px;
+    line-height: 1.8rem;
+    border-radius: 10px;
+}
+
+.box h3 {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.box-right button {
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 1.125rem;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    border: 2px solid var(--white);
+    padding: 10px 40px;
+}
+
+.box-right button:hover {
+    background-color: var(--btn-hover);
+}
+
+/* Footer  */
+
+footer {
+    background: var(--dark);
+    text-align: center;
+    padding: 20px;
+    color: #c9d1d9;
+}
+
+footer h3 {
+    font-size: 1.7rem;
+}
+
+footer .links {
+    padding: 18px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 1.1rem;
+}
+
+footer h4 {
+    font-size: 1.1rem;
+}
